@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{40E308D8-EBE2-40B6-BD54-7948473E6898}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Menu", "Menu", "{4D3F3CDC-0E29-458C-A2B8-2CBDC6A13500}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4D3F3CDC-0E29-458C-A2B8-2CBDC6A13500} = {40E308D8-EBE2-40B6-BD54-7948473E6898}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CE4664E-1636-4ECA-92D5-1DED92AAD334}
+	EndGlobalSection
+EndGlobal
