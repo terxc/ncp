@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  navigationdb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+
+  navigation.api:
+    image: ${DOCKER_REGISTRY-}navigationapi
+    build:
+      context: .
+      dockerfile: Services/Navigation/Navigation.API/Dockerfile
+
+volumes:
+  sqlvolume:

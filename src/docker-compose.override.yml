@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  navigationdb:
+    container_name: navigationdb
+    environment:
+        SA_PASSWORD: "SwN12345678"
+        ACCEPT_EULA: "Y"
+    restart: always
+    ports:
+        - "1433:1433"
+    volumes:
+      - sqlvolume:/var/opt/mssql
+
+  navigation.api:
+    container_name: navigation.api
+    environment:
+        - ASPNETCORE_ENVIRONMENT=Development
+        - "ConnectionStrings:NavigationConnectionString=Server=navigationdb;Database=NavigationDb;User Id=sa;Password=SwN12345678"            
+    depends_on:
+        - navigationdb
+    ports:
+        - "8000:80"

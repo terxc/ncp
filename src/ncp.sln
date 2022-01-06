@@ -5,14 +5,32 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{40E308D8-EBE2-40B6-BD54-7948473E6898}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Menu", "Menu", "{4D3F3CDC-0E29-458C-A2B8-2CBDC6A13500}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{4D3F3CDC-0E29-458C-A2B8-2CBDC6A13500}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigation.API", "Services\Navigation\Navigation.API\Navigation.API.csproj", "{452260E0-73B4-4E07-A91A-FBA45B675E22}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81641BAE-3D9A-4D12-8882-4687B0D838F1}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{452260E0-73B4-4E07-A91A-FBA45B675E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452260E0-73B4-4E07-A91A-FBA45B675E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452260E0-73B4-4E07-A91A-FBA45B675E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452260E0-73B4-4E07-A91A-FBA45B675E22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81641BAE-3D9A-4D12-8882-4687B0D838F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81641BAE-3D9A-4D12-8882-4687B0D838F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81641BAE-3D9A-4D12-8882-4687B0D838F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4D3F3CDC-0E29-458C-A2B8-2CBDC6A13500} = {40E308D8-EBE2-40B6-BD54-7948473E6898}
+		{452260E0-73B4-4E07-A91A-FBA45B675E22} = {4D3F3CDC-0E29-458C-A2B8-2CBDC6A13500}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2CE4664E-1636-4ECA-92D5-1DED92AAD334}
